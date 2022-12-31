@@ -17,8 +17,8 @@ const Countries = ({ filter, countries, weather, showCountry, handleCountry }) =
     )
   } else if (filterCountry.length <= 10) {
     return (
-      filterCountry.map((country, index) =>
-        <div key={index}>
+      filterCountry.map((country) =>
+        <div key={country.name.common}>
           {country.name.common}
           <button type='button' value={country.name.common} onClick={showCountry}>show</button>
           <br />
