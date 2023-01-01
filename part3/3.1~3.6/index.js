@@ -41,7 +41,7 @@ app.get('/info', (request, response) => {
   const numberOfPeople = generateId()
   const time = new Date()
   response.send(`
-  <p>Phonebook has info for ${numberOfPeople} people</p>
+  <p>Phonebook has info for ${numberOfPeople-1} people</p>
   <h3>${time}</h3>`)
 })
 
@@ -73,7 +73,7 @@ app.post('/api/persons', (request, response) => {
     return response.status(400).json({
       error: 'The name or number is missing'
     })
-  } else if (persons.map(x => x.name === body.name)) {
+  } else if ((persons.map(x => x.name === body.name)).includes(true)) {
     return response.status(400).json({
       error: 'The name already exists in the phonebook'
     })
