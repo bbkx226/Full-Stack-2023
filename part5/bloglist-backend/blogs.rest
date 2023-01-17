@@ -1,0 +1,36 @@
+POST http://localhost:3003/api/blogs/
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJia3giLCJpZCI6IjYzYzAxMWU5NmZjMGUwOTU1YmExNzAxYSIsImlhdCI6MTY3MzU2NDMzMSwiZXhwIjoxNjczNTY3OTMxfQ.zG3niOKkN_7FbfjaLaXqVTaUYky4rbi6P8TRUBirEO8
+
+{
+    "title" : "abc",
+    "url" : "bcd",
+    "author": "cde",
+    "likes" : 20
+}
+
+###
+POST http://localhost:3003/api/login/
+content-type: application/json
+
+{
+    "username": "bbkx",
+    "password": "123"
+}
+
+###
+POST http://localhost:3003/api/users/
+content-type: application/json
+
+{
+    "username": "aasasd",
+    "name": "Brandon",
+    "password": "123"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/63c091277c5a9e42bc658d31
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJia3giLCJpZCI6IjYzYzAxMWU5NmZjMGUwOTU1YmExNzAxYSIsImlhdCI6MTY3MzU2NDMzMSwiZXhwIjoxNjczNTY3OTMxfQ.zG3niOKkN_7FbfjaLaXqVTaUYky4rbi6P8TRUBirEO8
+
+###
+GET http://localhost:3003/api/users
