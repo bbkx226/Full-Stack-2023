@@ -1,0 +1,16 @@
+{
+  "name": "8.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Ban Kai Xian",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.7.11",
+    "@apollo/server": "^4.6.0",
+    "graphql": "^16.6.0"
+  }
+}
