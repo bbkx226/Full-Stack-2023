@@ -1,12 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-
-
 const Filter = ({persons, searchTerm, empty}) => {
     const [filteredPeople, setFilteredPeople] = useState(persons);
 
-    
     useEffect(() => {
         const results = persons.filter((person) =>
           person.name.toLowerCase().includes(searchTerm.toLowerCase())
