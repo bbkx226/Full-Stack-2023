@@ -47,9 +47,11 @@ const App = (props) => {
     padding: 0.75em;
     justify-content: center;
   `
+  const Test = () => { (<p>hello</p>) }
 
   return (
     <div>
+      <Test />
       {props.user === null ?
       <div>
         <Notification />
